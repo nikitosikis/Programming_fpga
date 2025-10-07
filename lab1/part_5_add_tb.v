@@ -25,9 +25,9 @@ module part_5_top_tb;
 
 
 	initial begin
-		$dumpfile("wave.vcd");		// create a VCD waveform dump called "wave.vcd"
-		$dumpvars(0, part_5_top_tb);		// dump variable changes in the testbench
-									// and all modules under it
+		$dumpfile("wave.vcd");		
+		$dumpvars(0, part_5_top_tb);	
+	
 		
 		#5 a = 1; b = 0; sum_compare = 1;
 		#5 a = 2; sum_compare = 2;
