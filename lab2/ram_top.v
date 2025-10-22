@@ -13,6 +13,9 @@ module ram_top#(
     always @(posedge clk) begin
         if (we)
             mem[adr] <= din;
-        dout <= mem[adr];
+    end    
+
+    always @(*) begin
+        dout = mem[adr];
     end
 endmodule
