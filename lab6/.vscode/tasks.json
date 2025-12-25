@@ -8,7 +8,7 @@
 			"type": "shell",
 			"command": "gtkwave.exe",
 			"args": [
-				".\\out\\*.vcd"
+				"*.vcd"
 			],
 			"options": {
 			  "cwd": "${workspaceFolder}"
